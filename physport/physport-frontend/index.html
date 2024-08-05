@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/style_login.css">
+</head>
+<body>
+    <div class="login-box">
+        <div class="img-box">
+            <img src="img/logo.png" width="70%" title="A_title_for_your_image">
+        </div>
+        <h1>Login</h1><br>
+        <form id="loginForm" onsubmit="loginUser(event)">
+            <!-- Usuario -->
+            <label for="username">Usuario</label>
+            <input type="text" id="username" name="username" placeholder="Ingrese el Usuario" required>
+
+            <!-- Contraseña -->
+            <label for="password">Contraseña</label>
+            <input type="password" id="password" name="password" placeholder="Ingrese la Contraseña" required>
+
+            <input type="submit" value="Login">
+            <a href="LosePassword.html">¿Perdiste tu contraseña?</a><br>
+            <a href="Register.html">¿No tienes cuenta? Registrate</a> 
+        </form>
+    </div>
+
+    <script>
+        function loginUser(event) {
+            event.preventDefault(); 
+
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+            var storedUser = JSON.parse(localStorage.getItem("user"));
+            if (storedUser && storedUser.username === username && storedUser.password === password) {
+                alert("Inicio de sesión exitoso");
+                window.location.href = "SelectedMode.html";
+            } else {
+                alert("Usuario o contraseña incorrectos");
+            }
+        }
+    </script>
+</body>
+</html>
