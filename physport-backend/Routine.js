@@ -1,4 +1,4 @@
-class User {
+class Routine {
     constructor(id, name, description, exercise, duration){
         this.id = id;
         this.name = name;
