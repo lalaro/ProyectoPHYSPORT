@@ -1,0 +1,136 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5); 
+    background: linear-gradient(to bottom,#0a3679, #0d47a1,#1976d2,#42a5f5);
+}
+
+.recuadro{
+    padding: 25px;
+    border: 5px dashed #b0b1b3;
+    align-items: center;
+    flex-shrink: 0;
+    margin-left: 20px;
+}
+
+.imgProfile-box {
+    width: 520px;
+    height: auto;
+    display: center;
+    justify-content: flex-end;
+    align-items: left;
+    margin-bottom: 20px;
+}
+
+.info-container {
+    display: flex;
+    flex-direction: column; 
+    flex-grow: 1; 
+}
+
+.img-box {
+    width: 220px;
+    height: auto;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.profile-container {
+    display: flex;
+    align-items: left;
+    justify-content: flex-start; 
+}
+
+.profile-box {
+    width: 600px;
+    height: 650px;
+    background: #122745;
+    color: #edf1f2;
+    top: 50%;
+    left: 50%;
+    position: relative;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+    border-radius: 10px; 
+    box-shadow: 0px 0px 2px 2px rgba(85, 67, 223, 0.5);
+}
+
+.profile-box .avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 0 auto; 
+    margin-bottom: 20px;
+}
+
+.imgProfile-box {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.imgProfile-box img {
+    width: 60%; 
+    margin-right: 20px; 
+}
+
+.profile-box h1{
+    margin : 0; 
+    padding: 0 0 20 px;
+    text-align: center;
+    font-size: 22px;
+}
+
+.profile-box label{
+    margin : 0; 
+    padding: 0;
+    font-weight: bold;
+}
+
+.profile-box input {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.profile-box input[type = "Perfil"],
+.profile-box input[type= "Info"]{
+    border: none;
+    border-bottom:  1px solid #edf1f2;
+    background: transparent ;
+    outline: none;
+    height: 25px;
+    color: #edf1f2;
+    font-size: 16px;
+}
+
+.profile-box input[type = "next"]{
+    border: none;
+    outline: none;
+    height: 40px;
+    background-color: #1e88e5 ;
+    color: #edf1f2;
+    font-size: 18px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.profile-box a {
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 20px;
+    color: #1e88e5;
+}
+
+.profile-box a:hover {
+    color: #f35675;
+}
+
+.profile-box input[type="submit"]:hover {
+    background-color: #f35675; 
+    box-shadow: 0 0 20px 20px rgba(0, 0, 0, 0.7); 
+}

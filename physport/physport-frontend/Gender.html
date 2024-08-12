@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/style_gender.css"> 
+</head>
+<body>
+    <div class="gender-box">
+        <h1>Registrate</h1><br>
+        <form id="genderForm" onsubmit="saveGender(event)">
+            <!-- genero -->
+            <div class="gender-container">
+                <label>
+                    <input name="gender" type="radio" value="Femenino" />
+                    <span>Femenino</span>
+                </label>
+                <label>
+                    <input name="gender" type="radio" value="Masculino" />
+                    <span>Masculino</span>
+                </label>
+                <label>
+                    <input name="gender" type="radio" value="rbiinternet" checked="Diferente" />
+                    <span>Diferente.</span>
+                </label>
+            </div>                      
+            <input type="submit" value="Siguiente">
+        </form>
+    </div>
+
+    <script>
+        function saveGender(event) {
+            event.preventDefault(); 
+            const selectedGender = document.querySelector('input[name="gender"]:checked').value; 
+            const currentUser = JSON.parse(localStorage.getItem("user")); 
+
+            if (currentUser) {
+                currentUser.gender = selectedGender; 
+                localStorage.setItem("user", JSON.stringify(currentUser)); 
+
+                window.location.href = "Profile.html";
+            } else {
+                alert("No se encontró un usuario activo.");
+            }
+        }
+    </script>
+</body>
+</html>

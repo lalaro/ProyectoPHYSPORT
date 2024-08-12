@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/style_profile.css">
+</head>
+<body>
+    <div class="profile-box">
+        <h1>Perfil Usuario</h1>
+        <form id="profileForm" onsubmit="loginUser(event)">
+            <!-- Nombre Usuario -->
+            <p><label for="Perfil">Perfil Usuario</label></p>
+            <div class="imgProfile-box">
+                <img src="img/profile.png" width="70%" title="Logo">
+                <div class="info-container">
+                    <label for="username">Usuario</label>
+                    <input type="text" id="username" name="username" readonly>
+                    <br><br>
+                    <label for="info">Información Usuario</label>
+                    <input type="text" id="info" name="info" readonly>
+                </div>
+            </div>
+            <hr>
+            <p><label for="Progress">Progreso</label></p>
+            <div class="img-box">
+                <img src="img/presentation.png" width="70%" title="Logo">
+                <div class="recuadro">
+                    <label for="Progress_lab">Análisis de estadísticas.</label>
+                </div>
+            </div>
+            
+
+            <input type="next" value="Continuar">
+        </form>
+
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var storedUser = JSON.parse(localStorage.getItem("user"));
+            if (storedUser) {
+                document.getElementById("username").value = storedUser.username;
+                document.getElementById("info").value = storedUser.gender || 'No disponible';
+            } else {
+                alert("No se encontró información del usuario.");
+            }
+        });
+    </script>
+    
+</body>
+</html>

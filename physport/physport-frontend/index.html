@@ -8,7 +8,7 @@
 <body>
     <div class="login-box">
         <div class="img-box">
-            <img src="img/logo.png" width="70%" title="A_title_for_your_image">
+            <img src="img/logo.png" width="70%" title="Logo">
         </div>
         <h1>Login</h1><br>
         <form id="loginForm" onsubmit="loginUser(event)">
@@ -35,7 +35,7 @@
             var storedUser = JSON.parse(localStorage.getItem("user"));
             if (storedUser && storedUser.username === username && storedUser.password === password) {
                 alert("Inicio de sesión exitoso");
-                window.location.href = "SelectedMode.html";
+                window.location.href = "Gender.html";
             } else {
                 alert("Usuario o contraseña incorrectos");
             }

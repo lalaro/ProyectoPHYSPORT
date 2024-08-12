@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/style_register.css">
+    <script src="js/register.js"></script> 
+</head>
+<body>
+    <div class="register-box">
+        <h1>Registrate</h1><br>
+        <form id="registerForm" onsubmit="registerUser(event)">
+            <!-- Nuevo Usuario -->
+            <label for="username">Nuevo Usuario</label>
+            <input type="text" id="username" placeholder="Ingrese el nuevo usuario" required>
+
+            <!-- Nueva Contraseña -->
+            <label for="password">Nueva Contraseña</label>
+            <input type="password" id="password" placeholder="Ingrese la nueva contraseña" required>
+
+            <!-- Confirmar Contraseña -->
+            <label for="confirm-password">Confirmar Contraseña</label>
+            <input type="password" id="confirm-password" placeholder="Ingrese nuevamente la contraseña" required>
+
+            <input type="submit" value="Registrar">
+        </form>
+    </div>
+</body>
+</html>
