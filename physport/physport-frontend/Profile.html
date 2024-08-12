@@ -31,7 +31,8 @@
             </div>
             
 
-            <input type="next" value="Continuar">
+            <input type="button" value="Continuar" onclick="redirectToPage()">
+
         </form>
 
     </div>
@@ -46,6 +47,10 @@
                 alert("No se encontró información del usuario.");
             }
         });
+
+        function redirectToPage() {
+            window.location.href = "Exercise.html"; 
+        }
     </script>
     
 </body>
