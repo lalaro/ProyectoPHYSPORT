@@ -15,18 +15,15 @@ body {
 }
 
 .exercise_box {
-    width: 320px;
-    height: 520px;
+    max-width: 1120px; 
     background: #122745;
     color: #edf1f2;
-    top: 50%;
-    left: 50%;
-    position: relative;
-    transform: translate(-50%, -50%);
+    margin: 50px auto;
     box-sizing: border-box;
     padding: 70px 30px;
     border-radius: 10px; 
     box-shadow: 0px 0px 2px 2px rgba(85, 67, 223, 0.5);
+    overflow: hidden; 
 }
 
 .exercise_box .avatar {
@@ -90,4 +87,133 @@ body {
 .exercise_box input[type="submit"]:hover {
     background-color: #f35675; 
     box-shadow: 0 0 20px 20px rgba(0, 0, 0, 0.7); 
+}
+
+.exercise_box input[type = "text"]{
+    border: none;
+    border-bottom:  1px solid #edf1f2;
+    background: transparent ;
+    outline: none;
+    height: 25px;
+    color: #edf1f2;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+}
+
+.exercise_box textarea {
+    border: none;
+    border-bottom:  1px solid #edf1f2;
+    background: transparent ;
+    outline: none;
+    color: #edf1f2;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    width: 100%; 
+    height: 70px; 
+    box-sizing: border-box; 
+    padding: 5px; 
+}
+
+#routine-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; 
+    padding: 0;
+    list-style: none;
+    margin-top: 10px; 
+    justify-content: center;
+}
+
+#routine-list li {
+    background-color:  #83b6dd;
+    color: #122745;
+    border: 1px solid #ccc; 
+    padding: 30px;
+    border-radius: 5px; 
+    width: calc(20.33% - 20px); 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: space-between; 
+    word-wrap: break-word;
+    overflow: hidden;
+    text-align: center;
+}
+
+#routine-list li button {
+    margin-top: 10px;
+    background-color: #f35675;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 3px;
+    align-self: center;
+}
+
+#routine-list li button:hover {
+    background-color: #f35675;
+}
+
+#routine-list li p {
+    margin: 0 0 10px 0; 
+    overflow: visible;
+}
+
+#add-routine-form input[type="submit"] {
+    border: none;
+    outline: none;
+    height: 30px; 
+    background-color: #1e88e5;
+    color: #edf1f2; 
+    font-size: 16px; 
+    border-radius: 15px; 
+    cursor: pointer; 
+    margin-top: 20px;
+    width: auto; 
+    padding: 0 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); 
+}
+
+#add-routine-form input[type="submit"]:hover {
+    background-color: #0d47a1; 
+}
+
+.button-container {
+    display: flex;
+    align-items: center; /* Align buttons vertically */
+    gap: 10px; /* Space between buttons */
+    justify-content: flex-end; /* Align buttons to the right */
+}
+
+.add-btn, .continue-btn {
+    border: none;
+    outline: none;
+    height: 40px;
+    font-size: 18px;
+    border-radius: 20px;
+    cursor: pointer;
+    padding: 0 20px; /* Adjust padding to control width */
+}
+
+.add-btn {
+    background-color: #1e88e5;
+    color: #edf1f2;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adjust shadow */
+}
+
+.add-btn:hover {
+    background-color: #f35675;
+}
+
+.continue-btn {
+    background-color: #42a5f5; /* Change as needed */
+    color: #edf1f2;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Thinner shadow */
+    font-size: 20px; /* Adjust font size for the arrow */
+}
+
+.continue-btn:hover {
+    background-color: #1976d2;
 }
