@@ -1,7 +1,12 @@
 document.addEventListener('DOMContentLoaded', () => {
     let routines = JSON.parse(localStorage.getItem('routines')) || [
         { name: "Día de pecho", description: "Ejercicios para fortalecer el pecho" },
-        { name: "Día de piernas", description: "Ejercicios para fortalecer las piernas" }
+        { name: "Día de piernas", description: "Ejercicios para fortalecer las piernas" },
+        { name: "Día de brazos", description: "Ejercicios para fortalecer los bíceps y tríceps" },
+        { name: "Día de abdomen", description: "Ejercicios para fortalecer el core" },
+        { name: "Día de cardio", description: "Ejercicios para mejorar la resistencia cardiovascular" },
+        { name: "Día de estiramientos", description: "Ejercicios para aumentar la flexibilidad y reducir el riesgo de lesiones" },
+        { name: "Día de full body", description: "Ejercicios para trabajar todo el cuerpo de manera equilibrada" },
     ];
 
     function renderRoutineList() {
@@ -12,8 +17,8 @@ document.addEventListener('DOMContentLoaded', () => {
             const listItem = document.createElement('li');
             listItem.innerHTML = `
                 <p>${routine.name} - ${routine.description}</p>
-                <button class="update-btn">Update</button>
-                <button class="delete-btn">Delete</button>
+                <button class="update-btn">Actualizar</button>
+                <button class="delete-btn">Eliminar</button>
             `;
             routineList.appendChild(listItem);
 
@@ -73,6 +78,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const continueButton = document.querySelector('.continue-btn');
     continueButton.addEventListener('click', () => {
-        window.location.href = 'target-page.html'; // Replace with the URL of the target page
+        window.location.href = 'target-page.html'; 
     });
 });

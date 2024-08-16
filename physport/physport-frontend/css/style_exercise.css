@@ -182,9 +182,9 @@ body {
 
 .button-container {
     display: flex;
-    align-items: center; /* Align buttons vertically */
-    gap: 10px; /* Space between buttons */
-    justify-content: flex-end; /* Align buttons to the right */
+    align-items: center; 
+    gap: 10px; 
+    justify-content: flex-end; 
 }
 
 .add-btn, .continue-btn {
@@ -194,13 +194,13 @@ body {
     font-size: 18px;
     border-radius: 20px;
     cursor: pointer;
-    padding: 0 20px; /* Adjust padding to control width */
+    padding: 0 20px; 
 }
 
 .add-btn {
     background-color: #1e88e5;
     color: #edf1f2;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adjust shadow */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
 }
 
 .add-btn:hover {
@@ -208,10 +208,10 @@ body {
 }
 
 .continue-btn {
-    background-color: #42a5f5; /* Change as needed */
+    background-color: #42a5f5; 
     color: #edf1f2;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Thinner shadow */
-    font-size: 20px; /* Adjust font size for the arrow */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 20px; 
 }
 
 .continue-btn:hover {
