@@ -14,7 +14,7 @@ body {
     margin-bottom: 20px;
 }
 
-.exercise_box {
+.meal_box {
     max-width: 1120px; 
     background: #122745;
     color: #edf1f2;
@@ -26,7 +26,7 @@ body {
     overflow: hidden; 
 }
 
-.exercise_box .avatar {
+.meal_box .avatar {
     width: 100px;
     height: 100px;
     border-radius: 50%;
@@ -34,25 +34,25 @@ body {
     margin-bottom: 20px;
 }
 
-.exercise_box h1{
+.meal_box h1{
     margin : 0; 
     padding: 0 0 20 px;
     text-align: center;
     font-size: 22px;
 }
 
-.exercise_box label{
+.meal_box label{
     margin : 0; 
     padding: 0;
     font-weight: bold;
 }
 
-.exercise_box input {
+.meal_box input {
     width: 100%;
     margin-bottom: 20px;
 }
 
-.exercise_box input[type = "submit"]{
+.meal_box input[type = "submit"]{
     border: none;
     outline: none;
     height: 40px;
@@ -62,23 +62,23 @@ body {
     border-radius: 20px;
 }
 
-.exercise_box a {
+.meal_box a {
     text-decoration: none;
     font-size: 12px;
     line-height: 20px;
     color: #1e88e5;
 }
 
-.exercise_box a:hover {
+.meal_box a:hover {
     color: #f35675;
 }
 
-.exercise_box input[type="submit"]:hover {
+.meal_box input[type="submit"]:hover {
     background-color: #f35675; 
     box-shadow: 0 0 20px 20px rgba(0, 0, 0, 0.7); 
 }
 
-.exercise_box input[type = "text"]{
+.meal_box input[type = "text"]{
     border: none;
     border-bottom:  1px solid #edf1f2;
     background: transparent ;
@@ -89,7 +89,7 @@ body {
     font-family: Arial, sans-serif;
 }
 
-.exercise_box textarea {
+.meal_box textarea {
     border: none;
     border-bottom:  1px solid #edf1f2;
     background: transparent ;
@@ -103,7 +103,7 @@ body {
     padding: 5px; 
 }
 
-#routine-list {
+#meal-list {
     display: flex;
     flex-wrap: wrap;
     gap: 10px; 
@@ -113,7 +113,7 @@ body {
     justify-content: center;
 }
 
-#routine-list li {
+#meal-list li {
     background-color:  #83b6dd;
     color: #122745;
     border: 1px solid #ccc; 
@@ -130,7 +130,7 @@ body {
     text-align: center;
 }
 
-#routine-list li button {
+#meal-list li button {
     margin-top: 10px;
     background-color: #f35675;
     color: white;
@@ -141,16 +141,16 @@ body {
     align-self: center;
 }
 
-#routine-list li button:hover {
+#meal-list li button:hover {
     background-color: #f35675;
 }
 
-#routine-list li p {
+#meal-list li p {
     margin: 0 0 10px 0; 
     overflow: visible;
 }
 
-#add-routine-form input[type="submit"] {
+#add-meal-form input[type="submit"] {
     border: none;
     outline: none;
     height: 30px; 
@@ -165,7 +165,7 @@ body {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); 
 }
 
-#add-routine-form input[type="submit"]:hover {
+#add-meal-form input[type="submit"]:hover {
     background-color: #0d47a1; 
 }
 

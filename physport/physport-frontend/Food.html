@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Mis Comidas - TopGear</title>
+    <link rel="stylesheet" href="css/style_meal.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="js/food.js"></script>
+</head>
+<body>
+    <div class="meal_box">
+        <div>
+            <h1>Mis Comidas</h1>
+            <ul id="meal-list"></ul>
+
+            <h2>Agregar Nueva Comida</h2>
+            <form id="add-meal-form">
+                <label for="meal-name">Nombre de la comida:</label>
+                <input type="text" id="meal-name" name="meal-name" placeholder="Ingrese el nombre de la comida">
+                <label for="meal-description">Descripción:</label>
+                <textarea id="meal-description" name="meal-description" placeholder="Ingrese la descripción de la comida"></textarea>
+                <input type="submit" value="Adicionar comida">
+                <div class="button-container">
+                    <button class="continue-btn">→</button> 
+                </div>
+                
+            </form>
+        </div>
+    </div>
+</body>
+</html>

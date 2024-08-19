@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Rutinas de Ejercicio - TopGear</title>
+    <title>Rutinas de Ejercicio</title>
     <link rel="stylesheet" href="css/style_exercise.css">
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script src="js/exercise.js"></script>
@@ -21,11 +21,16 @@
                 <textarea id="routine-description" name="routine-description" placeholder="Ingrese la descripción de la rutina"></textarea>
                 <input type="submit" value="Adicionar rutina">
                 <div class="button-container">
-                    <button class="continue-btn">→</button> 
+                    <button class="continue-btn" id="continueButton">→</button> 
                 </div>
-                
             </form>
         </div>
     </div>
+
+    <script>
+        document.getElementById("continueButton").addEventListener("click", function() {
+            window.location.href = "your-next-page.html";
+        });
+    </script>
 </body>
 </html>
