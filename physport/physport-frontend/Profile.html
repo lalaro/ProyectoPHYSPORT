@@ -27,6 +27,7 @@
                 <img src="img/presentation.png" width="70%" title="Logo">
                 <div class="recuadro">
                     <label for="Progress_lab">Análisis de estadísticas.</label>
+                    <br><br>
                     <label for="ejercicios">Ejercicios</label>
                     <input type="text" id="routines" name="routines" readonly>
                     <br><br>
@@ -35,7 +36,6 @@
                 </div>
             </div>
             
-
             <input type="button" value="Continuar" onclick="redirectToPage()">
 
         </form>
@@ -51,22 +51,28 @@
             } else {
                 alert("No se encontró información del usuario.");
             }
+
+            var routines = JSON.parse(localStorage.getItem('routines'));
+            var meals = JSON.parse(localStorage.getItem('meals'));
+            
+            if (routines) {
+                var routineCount = routines.length || 0; // Contar rutinas
+                document.getElementById("routines").value = routineCount + " ejercicios";
+            } else {
+                document.getElementById("routines").value = "0 ejercicios";
+            }
+
+            if (meals) {
+                var mealCount = meals.length || 0; // Contar comidas
+                document.getElementById("meals").value = mealCount + " comidas";
+            } else {
+                document.getElementById("meals").value = "0 comidas";
+            }
         });
 
         function redirectToPage() {
             window.location.href = "Exercise.html"; 
         }
-
-        document.addEventListener("DOMContentLoaded", function(){
-            var routines = JSON.parse(localStorage.getItem('routines'));
-            var meals = JSON.parse(localStorage.getItem('meals')) ;
-            if (routines){
-                document.getElementById("routines").value = routines.routines;
-            }
-            if (meals){
-                document.getElementById("meals").value = meals.meals;
-            }
-        })
     </script>
     
 </body>
