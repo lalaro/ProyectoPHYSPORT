@@ -31,6 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+
     function saveRoutines() {
         localStorage.setItem('routines', JSON.stringify(routines));
     }
@@ -40,7 +41,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const routineDescription = document.getElementById('routine-description').value;
 
         if (!routineName || !routineDescription) {
-            alert('Please fill in all fields');
+            alert('No se agrego ninguna rutina');
             return;
         }
 
@@ -78,6 +79,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const continueButton = document.querySelector('.continue-btn');
     continueButton.addEventListener('click', () => {
-        window.location.href = 'target-page.html'; 
+        window.location.href = 'Food.html'; 
     });
 });

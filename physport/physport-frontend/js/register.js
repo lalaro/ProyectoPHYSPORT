@@ -19,5 +19,5 @@ function registerUser(event) {
 
     alert("Usuario registrado correctamente.");
 
-    window.location.href = "/login";
+    window.location.href = "index.html";
 }

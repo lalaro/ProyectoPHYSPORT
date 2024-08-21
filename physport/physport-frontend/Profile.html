@@ -27,6 +27,11 @@
                 <img src="img/presentation.png" width="70%" title="Logo">
                 <div class="recuadro">
                     <label for="Progress_lab">Análisis de estadísticas.</label>
+                    <label for="ejercicios">Ejercicios</label>
+                    <input type="text" id="routines" name="routines" readonly>
+                    <br><br>
+                    <label for="meals">Comidas</label>
+                    <input type="text" id="meals" name="meals" readonly>
                 </div>
             </div>
             
@@ -51,6 +56,17 @@
         function redirectToPage() {
             window.location.href = "Exercise.html"; 
         }
+
+        document.addEventListener("DOMContentLoaded", function(){
+            var routines = JSON.parse(localStorage.getItem('routines'));
+            var meals = JSON.parse(localStorage.getItem('meals')) ;
+            if (routines){
+                document.getElementById("routines").value = routines.routines;
+            }
+            if (meals){
+                document.getElementById("meals").value = meals.meals;
+            }
+        })
     </script>
     
 </body>

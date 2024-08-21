@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const mealDescription = document.getElementById('meal-description').value;
 
         if (!mealName || !mealDescription) {
-            alert('Please fill in all fields');
+            alert('No se agrego ninguna comida');
             return;
         }
 
@@ -78,6 +78,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const continueButton = document.querySelector('.continue-btn');
     continueButton.addEventListener('click', () => {
-        window.location.href = 'target-page.html'; 
+        window.location.href = 'Profile.html'; 
     });
 });
