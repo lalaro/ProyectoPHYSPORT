@@ -50,8 +50,7 @@ y luego se ejecuta el index.html
  
 La idea es poder visualizar lo siguiente y poder navegar por la aplicación:
 
-![image10.jpeg](src%2Fmain%2Fresources%2Fimage10.jpeg)
-
+![imageIS.jpeg](physport/physport-frontend/img/imageIS.jpeg)
 ## Construido con
 
 * [Node.js y npm](https://docs.npmjs.com/) - El entorno de ejecución de JavaScript y el gestor de paquetes utilizado para gestionar las dependencias del proyecto.
